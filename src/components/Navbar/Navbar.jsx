@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../../assets/images/logo-icon.png";
 import "./Navbar.css";
 import MobileNav from "./MobileNav/MobileNav";
+import resume from "../../assets/docs/Resume.pdf"
 
 
 const Navbar = ({ scrollToSection, heroRef, skillsRef, workExperienceRef, contactRef }) => {
@@ -42,9 +43,15 @@ const Navbar = ({ scrollToSection, heroRef, skillsRef, workExperienceRef, contac
                 Contact Me
               </a>
             </li>
-            <button className="contact-btn" onClick={() => { }}>
-            Download CV
-            </button>
+            <a
+              href={resume} 
+              download="Nithyanantham_Resume.pdf"
+              style={{textDecoration: 'none'}}
+            >
+              <button className="contact-btn">
+                Download CV
+              </button>
+            </a>
           </ul>
           <button className="menu-btn" onClick={toggleMenu}>
             <span className={"material-symbols-outlined"} style={{ fontSize: "1.8rem" }}

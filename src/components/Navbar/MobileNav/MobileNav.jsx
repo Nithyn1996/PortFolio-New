@@ -1,6 +1,7 @@
 import React from 'react'
 import "./MobileNav.css"
 import logo from "../../../assets/images/react-icon.png";
+import resume from "../../../assets/docs/Resume.pdf"
 
 const MobileNav = ({isOpen, toggleMenu, scrollToSection, heroRef, skillsRef, workExperienceRef, contactRef, handleNavClick}) => {
   return (
@@ -29,7 +30,15 @@ const MobileNav = ({isOpen, toggleMenu, scrollToSection, heroRef, skillsRef, wor
                     Contact Me
                   </a>
                 </li>
-            <button className="contact-btn" onClick={() => {}}>Download CV</button>
+                <a
+                  href={resume} 
+                  download="Nithyanantham_Resume.pdf"
+                  style={{textDecoration: 'none'}}
+                >
+                  <button className="contact-btn">
+                    Download CV
+                  </button>
+                </a>
                 </ul>
             </div>
         </div>

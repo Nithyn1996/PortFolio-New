@@ -17,7 +17,6 @@ function App() {
 
   // Function to handle smooth scrolling
   const scrollToSection = (ref) => {
-    console.log("ref",ref)
     ref.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
