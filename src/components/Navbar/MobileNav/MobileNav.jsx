@@ -1,6 +1,6 @@
 import React from 'react'
 import "./MobileNav.css"
-import logo from "../../../assets/images/react-icon.png";
+import logo from "../../../assets/images/logo-icon.png";
 import resume from "../../../assets/docs/Resume.pdf"
 
 const MobileNav = ({isOpen, toggleMenu, scrollToSection, heroRef, skillsRef, workExperienceRef, contactRef, handleNavClick}) => {

@@ -21,7 +21,9 @@ const Navbar = ({ scrollToSection, heroRef, skillsRef, workExperienceRef, contac
       <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} scrollToSection={scrollToSection} heroRef={heroRef} skillsRef={skillsRef} workExperienceRef={workExperienceRef} contactRef={contactRef} handleNavClick={handleNavClick} />
       <nav className="nav-wrapper">
         <div className="nav-content">
-          <img src={logo} alt="" className="logo" />
+          <a href="" onClick={(e) => handleNavClick(heroRef, e)} className="menu-item">
+            <img src={logo} alt="" className="logo" />
+          </a>
           <ul>
             <li >
               <a href="" onClick={(e) => handleNavClick(heroRef, e)} className="menu-item">
